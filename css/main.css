@@ -1,5 +1,27 @@
+/*Logo font*/
+@import url("https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=Onest:wght@600&display=swap");
+
+/*Header font*/
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=IM+Fell+English+SC&family=Onest:wght@600&display=swap");
+
+/*Text*/
+@import url("https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Archivo+Black&family=IM+Fell+English+SC&family=Onest:wght@600&display=swap");
+
+/*Colors*/
 html {
   --orange: #c2901b;
   --brown: #6e440a;
   --beige: #e9ebb9;
+}
+
+h1 {
+  font-family: "IM Fell English SC", serif;
+}
+
+h2 {
+  font-family: "Archivo Black", sans-serif;
+}
+
+h3 {
+  font-family: "Afacad", sans-serif;
 }
