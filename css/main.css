@@ -14,8 +14,24 @@ html {
   --beige: #e9ebb9;
 }
 
-h1 {
+/* Header */
+
+header,
+ul {
+  background-color: var(--beige);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.icon {
+  width: 40%;
+}
+
+#logo {
+  font-size: 2.5rem;
   font-family: "IM Fell English SC", serif;
+  color: var(--brown);
 }
 
 h2 {
