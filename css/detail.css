@@ -13,3 +13,89 @@ html {
   --brown: #6e440a;
   --beige: #e9ebb9;
 }
+
+/* Header */
+
+header,
+.header-menu {
+  background-color: var(--beige);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 2%;
+}
+
+body {
+  margin: 0;
+}
+
+.icon {
+  width: 40%;
+}
+
+figure {
+  margin-left: 0%;
+  margin-right: 0%;
+}
+
+#logo {
+  font-size: 2.5rem;
+  font-family: "IM Fell English SC", serif;
+  color: var(--brown);
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  font-family: "Archivo Black", sans-serif;
+  color: var(--brown);
+}
+
+#newsletter-headline {
+  margin-left: 2rem;
+  font-size: 1.4rem;
+  margin-bottom: 0%;
+}
+
+#newsletter-text {
+  margin-left: 2rem;
+  margin-top: 0%;
+}
+
+h3,
+li,
+p {
+  font-family: "Afacad", sans-serif;
+  list-style: none;  
+
+}
+
+p {
+  color: var(--brown);
+  
+}
+
+ul {
+  padding-left: 0;
+  color: var(--brown);
+  margin-top: 0%;
+}
+
+footer {
+  background-color: var(--beige);
+  padding-top: 1.7rem;
+  padding-bottom: 1.7rem;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+}
+
+.footer-header {
+  font-family: "Archivo Black", sans-serif;
+  font-size: 1.4rem;
+}
