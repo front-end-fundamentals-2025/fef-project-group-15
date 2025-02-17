@@ -21,13 +21,23 @@ body {
 /*HEADER*/
 header,
 .header-menu {
-  background-color: var(--beige);
+  background-color: burlywood;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding-left: 2%;
 }
 
+header nav ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+header nav ul a {
+  margin-right: 20px; /* Optional: Add some space between the icons */
+}
 /*Size of the icons in the header*/
 .icon {
   width: 40%;
