@@ -59,9 +59,17 @@
             A stylish chair featuring a wooden frame, airy boho netting, and
             sturdy metal elements – perfect for modern, natural living
           </p>
-          <a href="#" id="button"
-            ><button id="button-style">Add to Cart</button></a
-          >
+
+          <!-- Group the button and form together -->
+          <div class="button-form-group">
+            <a href="#" id="button">
+              <button id="button-style">Add to Cart</button>
+            </a>
+            <form id="counter">
+              <label for="quantity"></label>
+              <input type="number" name="quantity" min="1" max="50" value="1" />
+            </form>
+          </div>
         </div>
 
         <div class="measurements">

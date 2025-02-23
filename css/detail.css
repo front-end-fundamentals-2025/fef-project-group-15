@@ -88,9 +88,9 @@ h2 {
 
 /*Everything in the second column*/
 .headline {
-  grid-column: 2;
   display: flex;
   flex-direction: column;
+  grid-column: 2;
   justify-content: center;
   margin-left: 3rem;
   margin-right: 3rem;
@@ -107,13 +107,31 @@ h2 {
   font-size: 4rem;
 }
 
+.button-form-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
 /*margin for the button*/
 #button {
-  margin-top: 2rem;
+  display: inline-flex;
+}
+
+#counter {
+  display: inline-flex;
+  align-items: center;
+}
+
+#input-quantity {
+  width: 3rem;
+  height: 1.6rem;
 }
 
 /*style the button*/
 #button-style {
+  display: inline-block;
   background-color: #6e440a;
   color: white;
   border: none;
@@ -127,7 +145,6 @@ h2 {
 #button-style:hover {
   background-color: #c2901b;
 }
-
 /*2nd row*/
 .measurements {
   margin-left: 10rem;
