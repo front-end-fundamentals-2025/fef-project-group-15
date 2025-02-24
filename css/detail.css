@@ -177,6 +177,31 @@ h2 {
   width: 33%;
 }
 
+/*SCROLL*/
+/*I learned about the scroll feature on youtube: https://www.youtube.com/watch?v=2_E5uoiLCLY, accessed: 24.02.25*/
+#recommended-headline {
+  font-family: "Archivo Black", sans-serif;
+  margin-left: 2rem;
+  font-size: 1.4rem;
+}
+
+.scroll {
+  padding-top: 1rem;
+  max-height: 100%;
+  display: flex;
+  overflow-x: auto;
+}
+
+.scroll::-webkit-scrollbar {
+  width: 0;
+}
+.scroll .chair-scroll {
+  width: 25%;
+  height: 100%;
+  line-height: 110px;
+  text-align: center;
+}
+
 /*FOOTER*/
 #newsletter-headline {
   margin-left: 2rem;
