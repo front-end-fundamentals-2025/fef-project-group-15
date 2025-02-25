@@ -64,6 +64,8 @@ a {
 h2 {
   font-family: "Archivo Black", sans-serif;
   color: var(--brown);
+  margin-left: 5%;
+  margin-top: 2%;
 }
 
 /*FOOTER*/
@@ -121,4 +123,24 @@ footer {
 .footer-header {
   font-family: "Archivo Black", sans-serif;
   font-size: 1.4rem;
+}
+
+/* First article */
+.first-article {
+  width: 30%;
+}
+
+#first-cart-image {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 15px;
+  margin-left: 2rem;
+  margin-top: 4rem;
+  border: 2px solid #c2901b;
+  border-radius: 8px;
+}
+
+ul {
+  margin-top: 9%;
+  margin-right: 0;
 }
