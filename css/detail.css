@@ -72,11 +72,20 @@ h2 {
 .category-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  /*   background-color: lightgrey; */
+}
+
+@media (max-width: 620px) {
+  .category-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* background-color: lightblue; */
+  }
 }
 
 /*chair picture*/
 #detail-chair {
-  width: 120%;
+  width: 100%;
   margin-bottom: 4rem;
 }
 
@@ -145,9 +154,10 @@ h2 {
 #button-style:hover {
   background-color: #c2901b;
 }
+
 /*2nd row*/
 .measurements {
-  margin-left: 10rem;
+  margin-left: 7rem;
   max-width: 75%;
 }
 
@@ -168,13 +178,24 @@ h2 {
 
 /*3rd Row*/
 #example-images {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   margin-left: 2rem;
   margin-right: 2rem;
   margin-top: 4rem;
   margin-bottom: 4rem;
+  row-gap: 1rem;
 }
 .inspiration-image {
   width: 33%;
+}
+
+@media (max-width: 520px) {
+  .inspiration-image {
+    flex: 100%;
+    max-width: 100%;
+  }
 }
 
 /*SCROLL*/
