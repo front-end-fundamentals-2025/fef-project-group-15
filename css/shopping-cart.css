@@ -132,22 +132,80 @@ footer {
   font-size: 1.4rem;
 }
 
-/* First article */
+/* ARTICLE */
 .first-article {
-  width: 30%;
+  width: 15%;
 }
 
 #first-cart-image {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  grid-template-columns: repeat(4, 1fr);
+  width: 80%;
   padding: 15px;
-  margin-left: 2rem;
+  margin-left: 10%;
   margin-top: 4rem;
   border: 2px solid #c2901b;
   border-radius: 8px;
+  justify-content: space-between;
 }
 
 ul {
-  margin-top: 9%;
+  margin-top: 5%;
   margin-right: 0;
+}
+
+.total {
+  text-align: right;
+  margin-right: 9%;
+}
+
+.delete-icon {
+  margin-top: 10%;
+  width: 30px;
+  margin-left: auto;
+}
+
+#cart-title {
+  font-size: 200%;
+}
+
+/*SCROLL*/
+/*I learned about the scroll feature on youtube: https://www.youtube.com/watch?v=2_E5uoiLCLY, accessed: 24.02.25*/
+#recommended-headline {
+  margin-left: 2rem;
+  margin-top: 5%;
+}
+
+.scroll {
+  padding-top: 1rem;
+  max-height: 100%;
+  display: flex;
+  overflow-x: auto;
+}
+
+.scroll::-webkit-scrollbar {
+  width: 0;
+}
+.scroll .chair-scroll {
+  width: 25%;
+  height: 100%;
+  line-height: 110px;
+  text-align: center;
+}
+
+/* CHECKOUT BUTTON */
+.checkout-btn {
+  background-color: #c2901b;
+  color: white;
+  padding: 10px 20px;
+  font-size: 15px;
+  border: none;
+  border-radius: 8px;
+  transition: background 0.3s;
+  display: block;
+  margin-left: 83%;
+}
+
+.checkout-btn:hover {
+  background-color: #a57716;
 }
