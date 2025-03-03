@@ -90,25 +90,32 @@ figure {
   right: 7%;
   color: white;
   text-align: right;
-  max-width: 40%;
+  max-width: 30%;
 }
 
 /* Style the heading */
 #headline-top-image {
   top: 20%;
-  font-size: 250%;
+  font-size: clamp(1.5rem, 5vw, 4.5rem);
   font-weight: bold;
 }
 
 /* Style the paragraph */
 .overlay-text {
   top: 40%;
-  font-size: 100%;
+  font-size: clamp(0.5rem, 2.5vw, 1.5rem);
   background: rgba(66, 65, 65, 0.297);
   padding: 10px;
   padding-left: 0px;
   padding-right: 19px;
   border-radius: 5px;
+}
+
+/*The text with the background on the image will not be shown when it is a small screen size*/
+@media (max-width: 2220px) {
+  .overlay-text {
+    display: none;
+  }
 }
 
 /*Chairs to buy*/
@@ -122,6 +129,13 @@ figure {
   margin-right: 3rem;
   margin-top: 3rem;
   margin-bottom: 3rem;
+}
+
+/*Only a 2 column grid when screen size is below 800pxs*/
+@media (max-width: 800px) {
+  .category-container {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 figure {

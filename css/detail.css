@@ -75,9 +75,8 @@ h2 {
   /*   background-color: lightgrey; */
 }
 
-@media (max-width: 620px) {
+@media (max-width: 820px) {
   .category-container {
-    display: grid;
     grid-template-columns: 1fr;
     /* background-color: lightblue; */
   }
@@ -201,9 +200,7 @@ h2 {
 /*SCROLL*/
 /*I learned about the scroll feature on youtube: https://www.youtube.com/watch?v=2_E5uoiLCLY, accessed: 24.02.25*/
 #recommended-headline {
-  font-family: "Archivo Black", sans-serif;
   margin-left: 2rem;
-  font-size: 1.4rem;
 }
 
 .scroll {

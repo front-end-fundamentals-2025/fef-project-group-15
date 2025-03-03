@@ -38,6 +38,7 @@ header nav ul {
 header nav ul a {
   margin-right: 20px; /* Optional: Add some space between the icons */
 }
+
 /*Size of the icons in the header*/
 .icon {
   width: 40%;
@@ -61,10 +62,16 @@ a {
   text-decoration: none;
 }
 
+/*MAIN PART*/
+/*Shopping cart headline*/
+main {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
 h2 {
   font-family: "Archivo Black", sans-serif;
   color: var(--brown);
-  margin-left: 5%;
   margin-top: 2%;
 }
 
