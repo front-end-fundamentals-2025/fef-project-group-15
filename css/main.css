@@ -160,6 +160,31 @@ figcaption {
   color: var(--brown);
 }
 
+/* Banner */
+.banner {
+  margin: 0;
+  background-color: var(--beige);
+  color: var(--brown);
+  display: flex;
+  align-items: center;
+  height: 50px;
+  font-size: 24px;
+  font-weight: bold;
+  width: 100%;
+  position: absolute;
+  white-space: nowrap;
+  animation: slide 10s linear infinite;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
 /*FOOTER*/
 #newsletter-headline {
   margin-left: 2rem;
