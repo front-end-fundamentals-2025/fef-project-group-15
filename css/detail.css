@@ -269,21 +269,52 @@ ul {
 
 /*Background-color for the footer*/
 footer {
+  position: relative;
   background-color: burlywood;
   padding-top: 1.7rem;
   padding-bottom: 1.7rem;
+  height: 25rem;
 }
 
 /*Grid for the footer*/
 .footer {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   justify-items: left;
   margin-left: 2rem;
   margin-top: 4rem;
 }
 
+@media (max-width: 820px) {
+  .footer {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 .footer-header {
   font-family: "Archivo Black", sans-serif;
   font-size: 1.4rem;
+}
+
+/*French guy*/
+#french-guy-picture {
+  width: 18%;
+  max-width: 240px;
+  position: absolute;
+  right: 110vw; /* Keeps the image off-screen to the right */
+  bottom: 1.7rem; /* Adjusted to align the image to the bottom of the footer */
+  animation-name: french-guy;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-delay: 4s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes french-guy {
+  from {
+    transform: translateX(120vw);
+  }
+  to {
+    transform: translateX(105vw);
+  }
 }
