@@ -55,6 +55,14 @@ figure {
   font-size: 2.5rem;
   font-family: "IM Fell English SC", serif;
   color: var(--brown);
+  margin: 0;
+}
+
+/* Adjust font size on smaller screens */
+@media (max-width: 1000px) {
+  #logo {
+    font-size: 1rem;
+  }
 }
 
 /*The logo has no underline for the link*/
