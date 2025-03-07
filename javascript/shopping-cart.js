@@ -1,33 +1,25 @@
 const buttonElement = document.getElementById("button-style");
 
 document.getElementById("button-style").addEventListener("click", function () {
-  let product = {
-    image: "pictures-home/8.png",
-    name: "Riva Chair",
-    price: "2300 SEK",
-  };
-
-  let cart = JSON.parse(localStorage.getItem("cart")) || [];
-
-  cart.push(product);
-
-  localStorage.setItem("cart", JSON.stringify(cart));
-
+  localStorage.setItem("fruit", "apple");
   window.location.href = "shopping-cart.html";
+
+  /*  const cartElement = document.getElementById("try");
+  const pElement = document.createElement("li");
+  pElement.innerText = "Hey";
+  cartElement.appendChild(pElement); */
 });
 
-let cart = JSON.parse(localStorage.getItem("cart")) || [];
-let cartDiv = document.getElementById("cart");
-if (cart.length === 0) {
-  cartDiv.innerHTML = "<p>Your cart is empty.</p>";
-} else {
-  cart.forEach((product) => {
-    cartDiv.innerHTML += ` 
-             <div>
-              <img src="${product.image}" width="100">
-               <p><strong>${product.name}</strong></p>
-                <p>Price: ${product.price}</p>
-                 </div> 
-                 `;
-  });
-}
+// This code should run once the shopping-cart.html page is fully loaded
+window.addEventListener("load", function () {
+  // Retrieve the item stored in localStorage
+  const fruit = localStorage.getItem("fruit");
+
+  if (fruit) {
+    // Create a new list item based on the data from localStorage
+    const cartElement = document.getElementById("try");
+    const pElement = document.createElement("li");
+    pElement.innerText = fruit; // "apple" will be displayed
+    cartElement.appendChild(pElement);
+  }
+});
