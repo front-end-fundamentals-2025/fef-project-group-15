@@ -12,8 +12,7 @@ window.onload = function () {
     listItem.innerHTML = `
 
         <figure id="first-cart-image">
-        <img class="first-article" src="pictures-home/1.png" alt="" />
-
+        <img id="item-image" src="${newRivaChair.image}" />
         <ul>
           <li class="footer-header">${newRivaChair.name}</li>
           <li>Brown wood chair with armrest</li>
@@ -24,13 +23,11 @@ window.onload = function () {
           <li>${newRivaChair.price}</li>
         </ul>
 
-        <a href="#">
           <img
-            class="delete-icon"
+            id="delete-icon"
             src="icon/delete-icon.png"
             alt="delete button"
           />
-        </a>
       </figure>
       `;
 
@@ -41,10 +38,13 @@ window.onload = function () {
     const tryList = document.getElementById("try");
     tryList.innerHTML = "<li>No products in the cart.</li>";
   }
+
+  //if the delete icon is pressed the item will be deleted
+  const deleteElement = document.getElementById("delete-icon");
+  const listItem = document.getElementsByTagName("ul");
+
+  deleteElement.addEventListener("click", function () {
+    localStorage.removeItem("rivaChair");
+    location.reload();
+  });
 };
-
-const deleteElement = document.getElementsByClassName("delete-icon");
-
-document.getElementById("delete-icon").addEventListener("click", function () {
-
-});

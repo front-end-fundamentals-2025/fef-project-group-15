@@ -75,6 +75,10 @@ h2 {
   margin-top: 2%;
 }
 
+#item-image {
+  width: 15%;
+}
+
 /*FOOTER*/
 #newsletter-headline {
   margin-left: 2rem;
@@ -159,10 +163,11 @@ ul {
   margin-right: 9%;
 }
 
-.delete-icon {
-  margin-top: 10%;
-  width: 30px;
-  margin-left: auto;
+#delete-icon {
+  margin-bottom: 13%;
+  max-width: 3%;
+  height: auto;
+  object-fit: contain;
 }
 
 #cart-title {
