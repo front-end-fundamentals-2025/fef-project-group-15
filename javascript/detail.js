@@ -2,7 +2,7 @@ const buttonElement = document.getElementById("button-style");
 
 let rivaChair = {
   name: "Riva Chair",
-  price: "SEK 2300",
+  price: "2300",
   image: "pictures-home/1.png",
 };
 

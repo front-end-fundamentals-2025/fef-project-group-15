@@ -33,6 +33,17 @@ window.onload = function () {
 
     tryList.appendChild(listItem);
 
+    const costElement = document.getElementById("cost");
+
+    let priceInNumber = parseInt(newRivaChair.price);
+
+    let totalPrice = 0; // Loop through each item in the shopping cart
+    let finalPrice = totalPrice + priceInNumber;
+
+    // Update the cost in the HTML
+    costElement.textContent = `${finalPrice} SEK`;
+    localStorage.finalPrice = finalPrice;
+
     //if shoppingcart is empty:
   } else {
     const tryList = document.getElementById("try");
