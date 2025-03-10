@@ -181,15 +181,20 @@ figcaption {
   width: 100%;
   position: absolute;
   white-space: nowrap;
+}
+
+.banner-text {
+  display: flex;
+  white-space: nowrap;
   animation: slide 10s linear infinite;
 }
 
 @keyframes slide {
   from {
-    transform: translateX(100%);
+    transform: translateX(0%);
   }
   to {
-    transform: translateX(-100%);
+    transform: translateX(-50%);
   }
 }
 
