@@ -37,7 +37,7 @@ header nav ul {
 }
 
 header nav ul a {
-  margin-right: 20px; /* Optional: Add some space between the icons */
+  margin-right: 20px; /* Add some space between the icons */
 }
 
 /*Size of the icons in the header*/
@@ -46,10 +46,10 @@ header nav ul a {
 }
 
 /*Distance (Margin) in between the icons*/
-figure {
+/* figure {
   margin-left: 0%;
   margin-right: 0%;
-}
+} */
 
 /*Maison d´Epoque logo settings*/
 #logo {

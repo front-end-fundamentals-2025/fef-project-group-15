@@ -36,7 +36,7 @@ header nav ul {
 }
 
 header nav ul a {
-  margin-right: 20px;
+  margin-right: 20px;/* Add some space between the icons */
 }
 
 /*Size of the icons in the header*/
@@ -45,18 +45,18 @@ header nav ul a {
 }
 
 /*Distance (Margin) in between the icons*/
-figure {
+/* figure {
   margin-left: 0%;
   margin-right: 0%;
-}
+} */
 
 /*Maison d´Epoque logo settings*/
 #logo {
   font-size: 2.5rem;
   font-family: "IM Fell English SC", serif;
   color: var(--brown);
-  margin: 0;
-}
+/*   margin: 0;
+ */}
 
 /* Adjust font size on smaller screens */
 @media (max-width: 1000px) {
@@ -181,6 +181,7 @@ figcaption {
   width: 100%;
   position: absolute;
   white-space: nowrap;
+  overflow: hidden;
 }
 
 .banner-text {
