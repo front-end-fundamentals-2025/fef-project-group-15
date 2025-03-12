@@ -42,8 +42,22 @@ header nav ul a {
 /*Size of the icons in the header*/
 .icon {
   width: 40%;
+  margin-right: 20%;
+  transition: 1s;
 }
 
+/*icons get smaller when screen gets smaler*/
+@media (max-width: 600px) {
+  .icon {
+    min-width: 30%;
+  }
+}
+
+@media (max-width: 600px) {
+  .link-icon {
+    margin-right: 0;
+  }
+}
 /*Distance (Margin) in between the icons*/
 figure {
   margin-left: 0%;
@@ -55,6 +69,20 @@ figure {
   font-size: 2.5rem;
   font-family: "IM Fell English SC", serif;
   color: var(--brown);
+  transition: 1s;
+}
+
+/* Adjust font size on smaller screens */
+@media (max-width: 1000px) {
+  #logo {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  #logo {
+    font-size: 1.6rem;
+  }
 }
 
 /*No underline for the link*/
@@ -67,6 +95,10 @@ a {
 main {
   margin-left: 3rem;
   margin-right: 3rem;
+}
+
+#cart-title {
+  font-size: 200%;
 }
 
 h2 {
@@ -84,16 +116,41 @@ h2 {
   width: 15%;
 }
 
+#cart-title {
+  margin-left: 3rem;
+}
+
+/*Content of the box*/
 #first-cart-image {
   display: flex;
   grid-template-columns: repeat(4, 1fr);
+  align-items: center;
   width: 80%;
   padding: 15px;
-  margin-left: 10%;
+  margin-left: 3rem;
   margin-top: 4rem;
   border: 2px solid #c2901b;
   border-radius: 8px;
   justify-content: space-between;
+}
+
+/*Font size of the Riva Chair and Price*/
+.footer-header {
+  font-size: 1.8rem !important;
+  transition: 1s;
+}
+
+/*Changing Font size as the screen gets smaler*/
+@media (max-width: 700px) {
+  .footer-header {
+    font-size: 1rem !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-header {
+    font-size: 5rem;
+  }
 }
 
 ul {
@@ -111,10 +168,6 @@ ul {
   max-width: 3%;
   height: auto;
   object-fit: contain;
-}
-
-#cart-title {
-  font-size: 200%;
 }
 
 /* SCROLL */

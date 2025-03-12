@@ -35,13 +35,29 @@ header nav ul {
   list-style-type: none;
 }
 
+/* Add some space between the icons */
 header nav ul a {
-  margin-right: 20px;/* Add some space between the icons */
+  margin-right: 20px;
 }
 
 /*Size of the icons in the header*/
 .icon {
   width: 40%;
+  margin-right: 20%;
+  transition: 1s;
+}
+
+/*icons get smaller when screen gets smaler*/
+@media (max-width: 600px) {
+  .icon {
+    min-width: 30%;
+  }
+}
+
+@media (max-width: 600px) {
+  .link-icon {
+    margin-right: 0;
+  }
 }
 
 /*Distance (Margin) in between the icons*/
@@ -55,13 +71,19 @@ header nav ul a {
   font-size: 2.5rem;
   font-family: "IM Fell English SC", serif;
   color: var(--brown);
-/*   margin: 0;
- */}
+  transition: 1s;
+}
 
 /* Adjust font size on smaller screens */
 @media (max-width: 1000px) {
   #logo {
-    font-size: 1rem;
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  #logo {
+    font-size: 1.6rem;
   }
 }
 
@@ -149,7 +171,7 @@ figure {
 figure {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Centers content inside the figure */
+  align-items: center;
   text-align: center;
 }
 
@@ -159,8 +181,8 @@ figure {
 
 /*When you hover the chairs they will get bigger - z-index prevents from pushing the grid down*/
 .chairs:hover {
-  transform: scale(1.1); /* Increases size by 10% */
-  z-index: 2; /* Makes sure the hovered image stays above others */
+  transform: scale(1.1);
+  z-index: 2;
 }
 
 figcaption {
@@ -187,7 +209,7 @@ figcaption {
 .banner-text {
   display: flex;
   white-space: nowrap;
-  animation: slide 10s linear infinite;
+  animation: slide 14s linear infinite;
 }
 
 @keyframes slide {

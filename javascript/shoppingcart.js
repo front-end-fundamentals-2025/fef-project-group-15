@@ -15,7 +15,6 @@ window.onload = function () {
         <img id="item-image" src="${newRivaChair.image}" />
         <ul>
           <li class="footer-header">${newRivaChair.name}</li>
-          <li>Brown wood chair with armrest</li>
         </ul>
 
         <ul>
