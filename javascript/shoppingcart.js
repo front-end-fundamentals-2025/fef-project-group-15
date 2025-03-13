@@ -1,5 +1,6 @@
 window.onload = function () {
   let newRivaChair = JSON.parse(localStorage.getItem("rivaChair"));
+  const cartIcon = document.getElementById("cart-icon");
 
   if (newRivaChair) {
     //create a new element in shopping-cart.html under id:try
@@ -29,6 +30,16 @@ window.onload = function () {
           />
       </figure>
       `;
+
+   // Add the cart badge
+   if (!document.getElementById("cart-badge")) {
+    let cartBadge = document.createElement("span");
+    cartBadge.id = "cart-badge";
+    cartBadge.textContent = "1";
+    cartBadge.style.cssText =
+      "position: absolute; top: 8px; left: 18px; background: #e9ebb9; color: #6e440a; border-radius: 50%; width: 18px; height: 15px; display: flex; align-items: center; justify-content: center; font-size: 15px;";
+    cartIcon.appendChild(cartBadge);
+  }
 
     tryList.appendChild(listItem);
 
