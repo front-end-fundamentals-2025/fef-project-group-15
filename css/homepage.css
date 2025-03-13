@@ -1,0 +1,230 @@
+/*Logo font*/
+@import url("https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=Onest:wght@600&display=swap");
+
+/*Header font*/
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=IM+Fell+English+SC&family=Onest:wght@600&display=swap");
+
+/*Text*/
+@import url("https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Archivo+Black&family=IM+Fell+English+SC&family=Onest:wght@600&display=swap");
+
+/*Colors*/
+html {
+  --orange: #c2901b;
+  --brown: #6e440a;
+  --beige: #e9ebb9;
+}
+
+body {
+  margin: 0;
+}
+
+/*HEADER*/
+header,
+.header-menu {
+  background-color: burlywood;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 2%;
+}
+
+header nav ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+/* Add some space between the icons */
+header nav ul a {
+  margin-right: 20px;
+}
+
+/*Size of the icons in the header*/
+.icon {
+  width: 40%;
+  margin-right: 20%;
+  transition: 1s;
+}
+
+/*icons get smaller when screen gets smaller*/
+@media (max-width: 600px) {
+  .icon {
+    min-width: 30%;
+  }
+}
+
+@media (max-width: 600px) {
+  .link-icon {
+    margin-right: 0;
+  }
+}
+
+/*Maison d´Epoque logo settings*/
+#logo {
+  font-size: 2.5rem;
+  font-family: "IM Fell English SC", serif;
+  color: var(--brown);
+  transition: 1s;
+}
+
+/* Adjust font size on smaller screens */
+@media (max-width: 1000px) {
+  #logo {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  #logo {
+    font-size: 1.6rem;
+  }
+}
+
+/*The logo has no underline for the link*/
+a {
+  text-decoration: none;
+}
+
+h2 {
+  font-family: "Archivo Black", sans-serif;
+  color: var(--brown);
+}
+
+/*MAIN PART*/
+/*Help from ChatGPT: https://chatgpt.com/share/67c46652-30a0-8010-b99b-29d6793833cc, accessed: 02.03.25*/
+/*Placing the text on top of the image*/
+#big-image {
+  position: relative;
+  width: 100%;
+  margin: 0;
+}
+
+/* Ensure the image is full width */
+#background-picture {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Position the text on the right side of the image */
+#headline-top-image,
+.overlay-text {
+  position: absolute;
+  right: 7%;
+  color: white;
+  text-align: right;
+  max-width: 30%;
+}
+
+/* Style the heading */
+#headline-top-image {
+  top: 20%;
+  font-size: clamp(1.5rem, 5vw, 4.5rem);
+  font-weight: bold;
+}
+
+/*Chairs to buy*/
+.category-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 2 columns */
+  gap: 2rem;
+  justify-items: center; /* Center the items in the grid */
+  row-gap: 10rem;
+  margin-left: 10rem;
+  margin-right: 3rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+/*Only a 1 column grid when screen size is below 800pxs*/
+@media (max-width: 800px) {
+  .category-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 1700px) {
+  .category-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+/* #themes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+} */
+
+.chairs {
+  width: 90%;
+}
+
+/*When you hover the chairs they will get bigger - z-index prevents from pushing the grid down*/
+.chairs:hover {
+  transform: scale(1.05);
+  z-index: 2;
+}
+
+figcaption {
+  font-family: "Archivo Black", sans-serif;
+  color: var(--brown);
+}
+
+/*FOOTER*/
+#newsletter-headline {
+  margin-left: 2rem;
+  font-size: 1.4rem;
+  margin-bottom: 0%;
+}
+
+#newsletter-text {
+  margin-left: 2rem;
+  margin-top: 0%;
+}
+
+h3,
+li,
+p {
+  font-family: "Afacad", sans-serif;
+  list-style: none;
+  color: var(--brown);
+}
+
+ul {
+  padding-left: 0;
+  color: var(--brown);
+  margin-top: 0%;
+}
+
+/*Input box for the Newsletter*/
+#input-box-footer {
+  margin-left: 2rem;
+  background-color: white;
+  width: 19rem;
+  height: 2rem;
+  border-radius: 6px;
+  border-color: var(--beige);
+}
+
+/*Background-color for the footer*/
+footer {
+  background-color: burlywood;
+  padding-top: 1.7rem;
+  padding-bottom: 1.7rem;
+}
+
+/*Grid for the footer*/
+.footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: left;
+  margin-left: 2rem;
+  margin-top: 4rem;
+}
+
+.footer-header {
+  font-family: "Archivo Black", sans-serif;
+  font-size: 1.4rem;
+}
