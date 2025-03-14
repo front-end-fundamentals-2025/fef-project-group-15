@@ -13,7 +13,7 @@ function updateCartBadge() {
       cartBadge = document.createElement("span");
       cartBadge.id = "cart-badge";
       cartBadge.style.cssText =
-        "position: absolute; top: 8px; left: 18px; background: #e9ebb9; color: #6e440a; border-radius: 50%; width: 18px; height: 15px; display: flex; align-items: center; justify-content: center; font-size: 15px;";
+        "position: absolute; top: -8px; left: 39px; background: #e9ebb9; color: #6e440a; border-radius: 50%; width: 18px; height: 15px; display: flex; align-items: center; justify-content: center; font-size: 15px;";
       cartIcon.appendChild(cartBadge);
     }
     cartBadge.textContent = "1";

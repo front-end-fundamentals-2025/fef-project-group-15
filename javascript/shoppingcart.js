@@ -12,15 +12,18 @@ window.onload = function () {
     //variables are inspired from youtube: https://www.youtube.com/watch?v=u_iQn0hvrac accessed: 10.03.25
     listItem.innerHTML = `
 
+<a href="detail.html"> 
         <figure id="first-cart-image">
+          
         <img id="item-image" src="${newRivaChair.image}" />
+        
         <ul>
-          <li class="footer-header">${newRivaChair.name}</li>
+          <li class="footer-header"><h3>${newRivaChair.name}</h3></li>
         </ul>
-
+        
         <ul>
-          <li class="footer-header">Price</li>
-          <li>${newRivaChair.price}</li>
+          <li class="footer-header"><h3 id="price">Price</h3></li>
+          <li>${newRivaChair.price} </li>
         </ul>
 
           <img
@@ -29,8 +32,10 @@ window.onload = function () {
             alt="delete button"
           />
       </figure>
+      </a>
       `;
 
+//The following 8 lines are inspired of ChatGPT https://chatgpt.com/share/67d40675-23c8-8001-ac2f-fffb66d4fff3 accessed: 13/03/2025
    // Add the cart badge
    if (!document.getElementById("cart-badge")) {
     let cartBadge = document.createElement("span");
