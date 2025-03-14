@@ -43,11 +43,11 @@ header nav ul a {
 /*Size of the icons in the header*/
 .icon {
   width: 40%;
-  margin-right: 20%;
+  margin-right: 0%;
   transition: 1s;
 }
 
-/*icons get smaller when screen gets smaller*/
+/*icons get smaller when screen gets smaler*/
 @media (max-width: 600px) {
   .icon {
     min-width: 30%;
@@ -56,8 +56,14 @@ header nav ul a {
 
 @media (max-width: 600px) {
   .link-icon {
-    margin-right: 0;
+    margin-right: 30%;
   }
+}
+
+/*Distance (Margin) in between the icons*/
+figure {
+  margin-left: 0%;
+  margin-right: 0%;
 }
 
 /*Maison d´Epoque logo settings*/
@@ -156,6 +162,10 @@ h2 {
   align-items: center;
   text-align: center;
 } */
+
+#text-story {
+  width: 80%;
+}
 
 .chairs {
   width: 90%;
