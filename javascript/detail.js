@@ -11,3 +11,20 @@ document.getElementById("button-style").addEventListener("click", function () {
   localStorage.rivaChair = JSON.stringify(rivaChair);
   window.location.href = "shopping-cart.html";
 });
+
+window.onload = function () {
+  let newRivaChair = JSON.parse(localStorage.getItem("rivaChair"));
+  const cartIcon = document.getElementById("cart-icon");
+
+  if (newRivaChair) {
+    // Add the cart badge
+    if (!document.getElementById("cart-badge")) {
+      let cartBadge = document.createElement("span");
+      cartBadge.id = "cart-badge";
+      cartBadge.textContent = "1";
+      cartBadge.style.cssText =
+        "position: absolute; top: 8px; left: 18px; background: #e9ebb9; color: #6e440a; border-radius: 50%; width: 18px; height: 15px; display: flex; align-items: center; justify-content: center; font-size: 15px;";
+      cartIcon.appendChild(cartBadge);
+    }
+  }
+};
